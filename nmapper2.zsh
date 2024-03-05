@@ -30,7 +30,7 @@ function nmapper {
 	echo "3..2..1.."
 	echo "Intel retrieved"
 	echo ""
-	echo "Good luck hunting!"
+	echo "Happy hunting!"
 
 }
 	
