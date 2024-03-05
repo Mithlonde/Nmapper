@@ -21,7 +21,7 @@ I created a script that automates my intial Nmap reconnaissance tasks by scannin
 -   **-oN**: write output to nmap file
 
 **Nmapper PoC example screenshot**:
-![image](https://github.com/Mithlonde/Nmapper/assets/88001670/8eeac46d-38ac-439c-929f-c9c4ff3dc4d1)
+![image](https://github.com/Mithlonde/Nmapper/assets/88001670/e8eb5d10-8b85-4255-b7c6-3039d8557a5e)
 
 ## Usage
 **IMPORTANT NOTE**: Before running this script, set the $IP environment variable to the IP address of the target (`export IP=10.10.10.10`) and create a folder named 'scans' (`mkdir scans`). Or use [FileForge](https://github.com/Mithlonde/FileForge).
