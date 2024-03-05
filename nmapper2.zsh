@@ -26,10 +26,12 @@ function nmapper {
 	echo "==============================================================="
 	echo "OPTIONAL: Run a full scan in the background if required:"
 	echo "[+] Method: nmap -sCV $IP -Pn -oN scans/full-scan.nmap"
-	echo "3..2..1.."
-	echo "Intel retrieved"	
-	echo "Good luck hunting!"
 	echo "==============================================================="
+	echo "3..2..1.."
+	echo "Intel retrieved"
+	echo ""
+	echo "Good luck hunting!"
+
 }
 	
 nmapper
