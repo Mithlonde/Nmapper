@@ -25,7 +25,7 @@ function nmapper {
 	echo "[+] Method: sudo nmap -p161,162 -sUCV -Pn $IP -oN scans/snmp.nmap"
 	echo "==============================================================="
 	echo "OPTIONAL: Run a full scan in the background if required:"
-	echo "[+] Method: nmap -sCV $IP -oN scans/full-scan.nmap"
+	echo "[+] Method: nmap -sCV $IP -Pn -oN scans/full-scan.nmap"
 	echo "3..2..1.."
 	echo "Intel retrieved"	
 	echo "Good luck hunting!"
