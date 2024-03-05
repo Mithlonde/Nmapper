@@ -21,9 +21,8 @@ function nmapper {
 	echo "[+] Method: nmap -p$ports -sCV $IP -oN scans/services.nmap"
 	nmap -p$ports -sCV $IP -oN scans/services.nmap
 	echo "==============================================================="
-	echo "Scanning UDP SNMP on port 161,162"
-	echo "[+] Method: nmap -p161,162 -sUCV -Pn $IP -oN scans/snmp.nmap"
-	nmap -p161,162 -sUCV -Pn $IP -oN scans/snmp.nmap
+	echo "OPTIONAL: Scanning UDP SNMP on port 161,162"
+	echo "[+] Method: sudo nmap -p161,162 -sUCV $IP -oN scans/snmp.nmap"
 	echo "==============================================================="
 	echo "OPTIONAL: Run a full scan in the background if required:"
 	echo "[+] Method: nmap -sCV $IP -oN scans/full-scan.nmap"
