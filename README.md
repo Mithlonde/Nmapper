@@ -21,19 +21,13 @@ I created a script that automates my intial Nmap reconnaissance tasks by scannin
 -   **-oN**: write output to nmap file
 
 **Nmapper PoC example screenshot**:
-![image](https://github.com/Mithlonde/Nmapper/assets/88001670/e8eb5d10-8b85-4255-b7c6-3039d8557a5e)
+![nmapper1](https://github.com/Mithlonde/Nmapper/assets/88001670/05adc8a7-aefa-406d-b4de-d399cfccbb2e)
+
+**Nmapper will automatically add `-Pn` option if required**:
+![nmapper2](https://github.com/Mithlonde/Nmapper/assets/88001670/58f5de93-45dc-40db-94a7-7edd764963ed)
 
 ## Usage
 **IMPORTANT NOTE**: Before running this script, set the $IP environment variable to the IP address of the target (`export IP=10.10.10.10`) and create a folder named 'scans' (`mkdir scans`). Or use [FileForge](https://github.com/Mithlonde/FileForge).
 
 Also, for ease of use, you may want to add the following to your aliases:
 alias nmapper='/path/to/nmapper.zsh'
-alias nmapper2='/path/to/nmapper2.zsh'
-
-## To-Do List
-1. [ ] Edit nmapper so when -Pn is required, it will automatically run nmapper2.zsh
-	Note to trigger in nmap scan:
-	"Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn"
-2. [ ] Solve port order issue
-	Currently, service scan writes port in incorrect order:
-	"Method: nmap -p135,139,3389,445,8080 -sCV 192.168.219.43 -Pn -oN scans/services.nmap"
