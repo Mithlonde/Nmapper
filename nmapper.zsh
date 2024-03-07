@@ -30,6 +30,7 @@ function nmapper {
 	echo "       Network Reconnaissance Automator      "
 	echo "                by Mithlonde                 "
 	echo ""
+	# https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=The%20Edge&text=Nmapper
 
     # Define the Nmap command as a string variable
     port_scan="nmap -p- --min-rate 10000 $IP -oN scans/all-ports.nmap"
@@ -78,11 +79,11 @@ function nmapper {
 	echo "Output saved to scans/all-services.nmap"
 
 	echo ""
-	echo "${YELLOW}[!] OPTIONAL: ${NC}Scanning UDP SNMP on port 161,162${NC}"
+	echo "${YELLOW}[+] ${WHITE}Additional scans you can try:${NC}"
+	echo "${YELLOW}[!] Optional: ${NC}Scanning UDP SNMP on port 161,162${NC}"
 	echo "${NC}Command: ${BLUE}$udp_scan${NC}"
 
-	echo ""
-	echo "${YELLOW}[!] OPTIONAL: ${NC}Run a another full scan in the background if preferred${NC}"
+	echo "${YELLOW}[!] Optional: ${NC}Run a another full scan in the background if preferred${NC}"
 	echo "${NC}Command: ${BLUE}$full_scan${NC}"
 	echo ""
     echo -e "${YELLOW}Happy hunting!${NC}"
