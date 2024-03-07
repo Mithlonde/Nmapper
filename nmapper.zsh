@@ -19,6 +19,7 @@ CWD=$(echo "$PWD" | sed "s|^$HOME|~|")
 echo_command="${RED}$(whoami)@$(hostname)${NC}:${WHITE}${CWD}${NC}\$"
 
 function nmapper {
+
 	echo ""
 	echo "    ▄   █▀▄▀█ ██   █ ▄▄  █ ▄▄  ▄███▄   █▄▄▄▄ "
 	echo "     █  █ █ █ █ █  █   █ █   █ █▀   ▀  █  ▄▀ "
@@ -30,7 +31,6 @@ function nmapper {
 	echo "       Network Reconnaissance Automator      "
 	echo "                by Mithlonde                 "
 	echo ""
-	# https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=The%20Edge&text=Nmapper
 
     # Define the Nmap command as a string variable
     port_scan="nmap -p- --min-rate 10000 $IP -oN scans/all-ports.nmap"
