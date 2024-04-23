@@ -31,3 +31,6 @@ I created a script that automates my intial Nmap reconnaissance tasks by scannin
 
 Also, for ease of use, you may want to add the following to your aliases:
 alias nmapper='/path/to/nmapper.zsh'
+
+## Update
+- Optional scans to run now shows `full_scan="sudo $(which autorecon) $IP"` to run as a full background scan. Kudo's to Tib3rius' AutoRecon: https://github.com/Tib3rius/AutoRecon.
