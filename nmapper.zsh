@@ -35,7 +35,7 @@ function nmapper {
     # Define the Nmap command as a string variable
     port_scan="nmap -p- --min-rate 10000 $IP -oN scans/all-ports.nmap"
 	udp_scan="sudo nmap -p161,162 -sUCV $IP -oN scans/snmp.nmap"
-	full_scan="nmap -sCV $IP -oN scans/full-scan.nmap"
+	full_scan="sudo $(which autorecon) $IP"
 
     # Execute a ping scan to check host availability
     ping_check=$(nmap -sn --min-rate 10000 $IP)
