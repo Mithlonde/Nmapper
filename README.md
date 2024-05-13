@@ -21,10 +21,11 @@ I created a script that automates my intial Nmap reconnaissance tasks by scannin
 -   **-oN**: write output to nmap file
 
 **Nmapper PoC example screenshot**:
-![nmapper1](https://github.com/Mithlonde/Nmapper/assets/88001670/05adc8a7-aefa-406d-b4de-d399cfccbb2e)
+![nmapper1](https://github.com/Mithlonde/Nmapper/assets/88001670/6764cd01-ba9f-4a38-8e5f-2b214e723bd2)
+![nmapper2](https://github.com/Mithlonde/Nmapper/assets/88001670/7fc116da-957d-4ffc-9e14-d4d74f855faa)
 
 **Nmapper will automatically add `-Pn` option if required**:
-![nmapper2](https://github.com/Mithlonde/Nmapper/assets/88001670/58f5de93-45dc-40db-94a7-7edd764963ed)
+![nmapper3](https://github.com/Mithlonde/Nmapper/assets/88001670/58f5de93-45dc-40db-94a7-7edd764963ed)
 
 ## Usage
 **IMPORTANT NOTE**: Before running this script, set the $IP environment variable to the IP address of the target (`export IP=10.10.10.10`) and create a folder named 'scans' (`mkdir scans`). Or use [FileForge](https://github.com/Mithlonde/FileForge).
